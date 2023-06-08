@@ -1,11 +1,11 @@
-import { FC, ReactNode } from "react";
-import styled from "styled-components";
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
+import { FC, ReactNode } from 'react'
+import styled from 'styled-components'
+import Header from '@/components/layout/header'
+import Footer from '@/components/layout/footer'
 
 type Props = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 const DefaultLayout: FC<Props> = (props) => {
   return (
@@ -14,9 +14,9 @@ const DefaultLayout: FC<Props> = (props) => {
       <Contents>{props.children}</Contents>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-const Contents = styled.main``;
+const Contents = styled.main``
 
-export default DefaultLayout;
+export default DefaultLayout
