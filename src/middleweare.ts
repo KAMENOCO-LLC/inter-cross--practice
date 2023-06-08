@@ -7,8 +7,7 @@ export const config = {
 export const middleware = (req: NextRequest) => {
     // if(process.env.VERCEL_ENV === 'production') return
     const url = req.nextUrl
-
-const authorizationHeader = req.headers.get('authorization')
+    const authorizationHeader = req.headers.get('authorization')
 
 if (authorizationHeader) {
     const basicAuth = authorizationHeader.split('')[1]

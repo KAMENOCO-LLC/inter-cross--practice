@@ -35,7 +35,6 @@ const Menu = styled.nav`
   a {
     text-decoration: none;
     color: black;
-    
   }
   @media (min-width: 768px) {
     margin-right: 230px;
