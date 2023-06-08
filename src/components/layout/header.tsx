@@ -27,6 +27,10 @@ const Wrap = styled.header`
   display: flex;
   justify-content: space-between;
   background: #FFFFFF;
+  @media(min-width:768px){
+    max-width:820px;
+    margin:auto;
+  }
 `
 const Menu = styled.nav`
   display: flex;
@@ -34,10 +38,13 @@ const Menu = styled.nav`
   margin: 20px 10px;
   a {
     text-decoration: none;
-    color: black;
+    font-size: 14px;
+    line-height: 21px;
+    font-family:'メイリオ', 'Meiryo','MS ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+    letter-spacing: 0;
+    color: #24292E;
   }
   @media (min-width: 768px) {
-    margin-right: 230px;
     align-items: center;
     a:hover{
       opacity: 0.7;
@@ -47,16 +54,10 @@ const Menu = styled.nav`
 const Title = styled.h1`
   margin:10px;
   @media (min-width:768px){
-  margin-left: 230px;
     img{
       vertical-align: middle;
     }
 }
 `
-const a = styled.p`
-  font: normal normal normal 14px/21px Meiryo;
-  letter-spacing: 0;
-  color: #24292E;
-  opacity: 1;
-`
+
 export default Header
