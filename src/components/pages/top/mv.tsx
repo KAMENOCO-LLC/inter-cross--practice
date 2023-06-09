@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Mv: FC = () => {
     return(
       <Wrap>
-          <Image src={'/images/mainvisual.jpg'} alt={'MV画像'} width={1280} height={600} />
+          <Image src={'/images/mainvisual.jpg'} alt={'自転車が立てかけられている写真'} width={1280} height={600} />
       </Wrap>
     )
 }
