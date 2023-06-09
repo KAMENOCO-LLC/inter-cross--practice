@@ -1,8 +1,9 @@
 import { NextPageWithLayout } from 'next'
 import DefaultLayout from '@/components/layout/default-layout'
+import Mv from "@/components/pages/top/mv";
 
 const Home: NextPageWithLayout = () => {
-  return <>Inter-cross Practice</>
+  return (<><Mv /></>)
 }
 
 Home.getLayout = (page) => <DefaultLayout>{page}</DefaultLayout>
