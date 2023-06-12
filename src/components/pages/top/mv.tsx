@@ -9,7 +9,7 @@ const Mv: FC = () => {
       </Wrap>
     )
 }
-const Wrap = styled.div`
+const Wrap = styled.section`
     img{
       width: 100%;
       height: 600px;
