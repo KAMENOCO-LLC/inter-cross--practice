@@ -29,7 +29,7 @@ const Bicycle: FC = () => {
         </Wrap>
     )
 }
-const Wrap = styled.div`
+const Wrap = styled.section`
   margin-top: 100px;
 `
 const Title = styled.h1`
@@ -83,7 +83,7 @@ const ContentTitle = styled.h2`
   text-align: center;
 
 `
-const ContentText = styled.h3`
+const ContentText = styled.p`
   margin-top: 10px;
   color: #383E45;
   font-size: 14px;
