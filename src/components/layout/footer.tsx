@@ -5,8 +5,8 @@ const Footer: FC = () => {
     return <Wrap><Small>&copy; 2020 Profile</Small></Wrap>
 }
 const Wrap = styled.footer`
-  text-align: center;
   margin: 110px 0 10px 0;
+  text-align: center;
 `
 const Small = styled.small`
   color: #383E45;
