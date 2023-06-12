@@ -2,7 +2,11 @@ import {FC} from 'react'
 import styled from 'styled-components'
 
 const Footer: FC = () => {
-    return <Wrap><Small>&copy; 2020 Profile</Small></Wrap>
+    return (
+        <Wrap>
+            <Small>&copy; 2020 Profile</Small>
+        </Wrap>
+    )
 }
 const Wrap = styled.footer`
   margin: 110px 0 10px 0;
