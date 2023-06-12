@@ -49,7 +49,8 @@ const Title = styled.h1`
   border-bottom-width: 1px;
 `
 const List = styled.ul`
-  margin: 60px auto 0;
+  margin-top: 60px;
+  text-align: center;
   @media (min-width: 600px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, 345px);
