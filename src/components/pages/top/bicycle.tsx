@@ -5,12 +5,10 @@ import Image from 'next/image'
 const Bicycle: FC = () => {
     return (
         <Wrap>
-            <TitleBox>
-                <Title>
-                    Bicycle
-                </Title>
-                <Line></Line>
-            </TitleBox>
+            <Title>
+                Bicycle
+            </Title>
+            <Line></Line>
             <List>
                 <Content>
                     <Image src={'/images/bicycle1.jpg'} alt={'太陽を背にした自転車'} width={345} height={228}/>
@@ -32,9 +30,6 @@ const Bicycle: FC = () => {
     )
 }
 const Wrap = styled.div`
-
-`
-const TitleBox = styled.div`
   margin-top: 100px;
 `
 const Title = styled.h1`
@@ -52,11 +47,11 @@ const Line = styled.div`
   border-color: #383E45;
   width: 117px;
   margin: 0 auto;
-  
+
 `
 const List = styled.ul`
   margin-top: 60px;
-  gap:16px;
+  gap: 16px;
   text-align: center;
   @media (min-width: 768px) {
     display: flex;
