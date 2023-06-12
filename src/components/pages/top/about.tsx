@@ -16,7 +16,7 @@ const About: FC = () => {
                         KAKERU MIYAICHI
                     </Name>
                     <Text>
-                        テキストテキストテキストテキストテキストテキストテキスト<PcBr/>テキストテキストテキストテキストテキストテキストテキスト<PcBr />テキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキスト<PcBr/>テキストテキストテキストテキストテキストテキストテキスト<PcBr/>テキストテキストテキストテキストテキストテキストテキスト
                     </Text>
                 </Container>
             </FlexBox>
@@ -28,7 +28,7 @@ const About: FC = () => {
 const Wrap = styled.div`
   margin-top: 80px;
 `
-const FlexBox =styled.div`
+const FlexBox = styled.div`
   margin-top: 60px;
 
   img {
@@ -54,7 +54,7 @@ const Container = styled.div`
   margin: 0 auto;
   @media (min-width: 768px) {
     margin: unset;
-    width:403px;
+    width: 403px;
   }
 `
 const Title = styled.h1`
@@ -96,9 +96,9 @@ const Text = styled.h3`
 `
 
 const PcBr = styled.br`
-@media(min-width: 768px){
-  display: none;
-}
+  @media (min-width: 768px) {
+    display: none;
+  }
 `
 
 export default About
