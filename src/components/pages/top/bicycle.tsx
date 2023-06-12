@@ -5,10 +5,11 @@ import Image from 'next/image'
 const Bicycle: FC = () => {
     return (
         <Wrap>
-            <Title>
-                Bicycle
-            </Title>
-            <Line></Line>
+            <TitleBox>
+                <Title>
+                    Bicycle
+                </Title>
+            </TitleBox>
             <List>
                 <Content>
                     <Image src={'/images/bicycle1.jpg'} alt={'太陽を背にした自転車'} width={345} height={228}/>
@@ -30,30 +31,29 @@ const Bicycle: FC = () => {
     )
 }
 const Wrap = styled.section`
-  margin-top: 100px;
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 100px auto 0 auto;
+`
+const TitleBox = styled.div`
+text-align: center;
 `
 const Title = styled.h1`
+  display: inline-block;
   color: #383E45;
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
   font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
-  text-align: center;
-
-`
-const Line = styled.div`
-  border-style: solid;
-  border-width: 1px;
-  border-color: #383E45;
-  width: 117px;
-  margin: 0 auto;
-
+  border-bottom-style: solid;
+  border-bottom-color: #383E45;
+  border-bottom-width: 1px;
 `
 const List = styled.ul`
   margin-top: 60px;
   gap: 16px;
   text-align: center;
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     display: flex;
     justify-content: center;
   }
@@ -65,7 +65,7 @@ const Content = styled.li`
     vertical-align: middle;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     margin-top: 0;
     img {
       width: 263px;
