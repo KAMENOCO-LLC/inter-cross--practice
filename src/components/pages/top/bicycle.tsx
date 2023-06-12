@@ -49,12 +49,11 @@ const Title = styled.h1`
   border-bottom-width: 1px;
 `
 const List = styled.ul`
-  margin-top: 60px;
-  text-align: center;
+  margin: 60px auto 0;
   @media (min-width: 600px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 345px);
+    place-content: center;
     gap: 16px;
   }
 `
