@@ -14,6 +14,7 @@ const Wrap = styled.section`
       width: 100%;
       height: 600px;
       object-fit: cover;
+      vertical-align: middle;
     }
 `
 
