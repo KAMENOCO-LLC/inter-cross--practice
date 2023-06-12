@@ -25,7 +25,7 @@ const About: FC = () => {
 }
 
 
-const Wrap = styled.div`
+const Wrap = styled.section`
   margin-top: 80px;
 `
 const FlexBox = styled.div`
