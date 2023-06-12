@@ -31,9 +31,8 @@ const Bicycle: FC = () => {
     )
 }
 const Wrap = styled.section`
-  max-width: 960px;
   padding: 0 4%;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 0;
 `
 const TitleBox = styled.div`
 text-align: center;
@@ -51,26 +50,18 @@ const Title = styled.h1`
 `
 const List = styled.ul`
   margin-top: 60px;
-  gap: 16px;
   text-align: center;
   @media (min-width: 600px) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 16px;
   }
 `
 const Content = styled.li`
   margin-top: 30px;
-
   img {
     vertical-align: middle;
-  }
-
-  @media (min-width: 600px) {
-    margin-top: 0;
-    img {
-      width: 263px;
-      height: 174px;
-    }
   }
 `
 const ContentTitle = styled.h2`
