@@ -5,8 +5,9 @@ import Image from 'next/image'
 const About: FC = () => {
   return (
     <Wrap>
-      <Title>About</Title>
-      <Line></Line>
+      <TitleBox>
+        <Title>About</Title>
+      </TitleBox>
       <FlexBox>
         <Image
           src={'/images/about.jpg'}
@@ -59,7 +60,11 @@ const Container = styled.div`
     width: 403px;
   }
 `
+const TitleBox = styled.div`
+  text-align: center;
+`
 const Title = styled.h1`
+  display: inline-block;
   text-align: center;
   color: #383e45;
   font-size: 32px;
@@ -68,13 +73,9 @@ const Title = styled.h1`
   font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN',
     'ヒラギノ角ゴ ProN W3', sans-serif;
   letter-spacing: 0;
-`
-const Line = styled.div`
-  width: 101px;
-  margin: 0 auto;
-  border-color: #383e45;
-  border-style: solid;
-  border-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #383e45;
+  border-bottom-width: 1px;
 `
 const Name = styled.h2`
   margin-top: 10px;
