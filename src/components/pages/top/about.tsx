@@ -63,6 +63,7 @@ const Title = styled.h1`
   text-align: center;
   color: #383e45;
   font-size: 32px;
+  font-weight: bold;
   line-height: 48px;
   font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN',
     'ヒラギノ角ゴ ProN W3', sans-serif;
