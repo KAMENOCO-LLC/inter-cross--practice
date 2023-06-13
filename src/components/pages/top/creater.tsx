@@ -25,13 +25,14 @@ const Creater: FC = () => {
 const Wrap = styled.section`
   padding: 0 4%;
   margin: 100px auto 0;
+  max-width: 960px;
 `
 const List = styled.ul`
   margin-top: 60px;
   text-align: center;
   @media (min-width: 600px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 345px);
+    grid-template-columns: repeat(auto-fit, 263px);
     place-content: center;
     gap: 16px;
   }
