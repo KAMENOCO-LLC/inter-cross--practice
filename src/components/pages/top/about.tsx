@@ -29,7 +29,7 @@ const About: FC = () => {
 const Wrap = styled.section`
   max-width: 960px;
   padding: 0 4%;
-  margin: 80px auto 0 auto;
+  margin: 80px auto 0;
 `
 const TitleBox = styled.div`
   text-align: center;
@@ -39,7 +39,7 @@ const Title = styled.h1`
   color: #383E45;
   font-size: 32px;
   line-height: 48px;
-  font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;;
+  font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
   letter-spacing: 0;
   border-bottom-style: solid;
   border-bottom-color: #383E45;
@@ -70,13 +70,6 @@ const Container = styled.div`
   @media (min-width: 600px) {
     width: 403px;
   }
-`
-const Line = styled.div`
-  width: 101px;
-  margin: 0 auto;
-  border-color: #383E45;
-  border-style: solid;
-  border-width: 1px;
 `
 const Name = styled.h2`
   margin-top: 10px;
