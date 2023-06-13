@@ -1,13 +1,12 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
+import { SectionTitle } from '@/components/atoms/senction-title'
 
 const About: FC = () => {
   return (
     <Wrap>
-      <TitleBox>
-        <Title>About</Title>
-      </TitleBox>
+      <SectionTitle title={'About'} />
       <FlexBox>
         <Image
           src={'/images/about.jpg'}
@@ -59,23 +58,6 @@ const Container = styled.div`
   @media (min-width: 600px) {
     width: 403px;
   }
-`
-const TitleBox = styled.div`
-  text-align: center;
-`
-const Title = styled.h1`
-  display: inline-block;
-  text-align: center;
-  color: #383e45;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 48px;
-  font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN',
-    'ヒラギノ角ゴ ProN W3', sans-serif;
-  letter-spacing: 0;
-  border-bottom-style: solid;
-  border-bottom-color: #383e45;
-  border-bottom-width: 1px;
 `
 const Name = styled.h2`
   margin-top: 10px;
