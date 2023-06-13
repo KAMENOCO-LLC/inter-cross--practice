@@ -20,6 +20,8 @@ const Content = styled.li`
   margin-top: 30px;
 
   img {
+    width: 100%;
+    height: auto;
     vertical-align: middle;
   }
 `

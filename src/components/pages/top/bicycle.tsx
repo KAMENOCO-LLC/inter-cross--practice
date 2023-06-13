@@ -31,7 +31,7 @@ const List = styled.ul`
   text-align: center;
   @media (min-width: 600px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 345px);
+    grid-template-columns: repeat(auto-fit, 263px);
     place-content: center;
     gap: 16px;
   }

@@ -2,14 +2,14 @@ import { FC } from 'react'
 import styled from 'styled-components'
 import { SectionTitle } from '@/components/atoms/senction-title'
 import { ContentListItem } from '@/components/atoms/content-list-item'
-import { BlogItem } from '@/const/blog-item'
+import { CreaterList } from '@/const/creater-list'
 
-const Blog: FC = () => {
+const Creater: FC = () => {
   return (
     <Wrap>
-      <SectionTitle title={'Blog'} />
+      <SectionTitle title={'Creater'} />
       <List>
-        {BlogItem.map((data, index) => (
+        {CreaterList.map((data, index) => (
           <ContentListItem
             imgSrc={data.imgSrc}
             imgAlt={data.imgAlt}
@@ -25,6 +25,7 @@ const Blog: FC = () => {
 const Wrap = styled.section`
   padding: 0 4%;
   margin: 100px auto 0;
+  max-width: 960px;
 `
 const List = styled.ul`
   margin-top: 60px;
@@ -36,4 +37,4 @@ const List = styled.ul`
     gap: 16px;
   }
 `
-export default Blog
+export default Creater
