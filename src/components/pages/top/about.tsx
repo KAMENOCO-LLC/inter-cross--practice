@@ -5,10 +5,11 @@ import Image from 'next/image'
 const About: FC = () => {
     return (
         <Wrap>
-            <Title>
-                About
-            </Title>
-            <Line></Line>
+            <TitleBox>
+                <Title>
+                    About
+                </Title>
+            </TitleBox>
             <FlexBox>
                 <Image src={'/images/about.jpg'} alt={'プロフィール画像'} width={100} height={100}/>
                 <Container>
@@ -25,8 +26,24 @@ const About: FC = () => {
 }
 
 
-const Wrap = styled.div`
-  margin-top: 80px;
+const Wrap = styled.section`
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 80px auto 0;
+`
+const TitleBox = styled.div`
+  text-align: center;
+`
+const Title = styled.h1`
+  display: inline-block;
+  color: #383E45;
+  font-size: 32px;
+  line-height: 48px;
+  font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+  letter-spacing: 0;
+  border-bottom-style: solid;
+  border-bottom-color: #383E45;
+  border-bottom-width: 1px;
 `
 const FlexBox = styled.div`
   margin-top: 60px;
@@ -38,7 +55,7 @@ const FlexBox = styled.div`
     vertical-align: middle;
   }
 
-  @media (min-width: 768px ) {
+  @media (min-width: 600px ) {
     display: flex;
     justify-content: center;
     margin-top: 70px;
@@ -50,27 +67,9 @@ const FlexBox = styled.div`
   }
 `
 const Container = styled.div`
-  width: 345px;
-  margin: 0 auto;
-  @media (min-width: 768px) {
-    margin: unset;
+  @media (min-width: 600px) {
     width: 403px;
   }
-`
-const Title = styled.h1`
-  text-align: center;
-  color: #383E45;
-  font-size: 32px;
-  line-height: 48px;
-  font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;;
-  letter-spacing: 0;
-`
-const Line = styled.div`
-  width: 101px;
-  margin: 0 auto;
-  border-color: #383E45;
-  border-style: solid;
-  border-width: 1px;
 `
 const Name = styled.h2`
   margin-top: 10px;
@@ -81,7 +80,7 @@ const Name = styled.h2`
   font-family: 'メイリオ', 'Meiryo', 'MS ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
   letter-spacing: 0;
   text-align: left;
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     margin-top: unset;
   }
 `
@@ -96,7 +95,7 @@ const Text = styled.h3`
 `
 
 const PcBr = styled.br`
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     display: none;
   }
 `
