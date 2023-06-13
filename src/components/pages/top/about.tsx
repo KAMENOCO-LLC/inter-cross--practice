@@ -29,8 +29,10 @@ const About: FC = () => {
   )
 }
 
-const Wrap = styled.div`
-  margin-top: 80px;
+const Wrap = styled.section`
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 80px auto 0;
 `
 const FlexBox = styled.div`
   margin-top: 60px;
@@ -41,8 +43,7 @@ const FlexBox = styled.div`
     margin: 0 auto;
     vertical-align: middle;
   }
-
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     display: flex;
     justify-content: center;
     margin-top: 70px;
@@ -54,10 +55,7 @@ const FlexBox = styled.div`
   }
 `
 const Container = styled.div`
-  width: 345px;
-  margin: 0 auto;
-  @media (min-width: 768px) {
-    margin: unset;
+  @media (min-width: 600px) {
     width: 403px;
   }
 `
@@ -87,7 +85,7 @@ const Name = styled.h2`
     'ヒラギノ角ゴ ProN W3', sans-serif;
   letter-spacing: 0;
   text-align: left;
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     margin-top: unset;
   }
 `
@@ -103,7 +101,7 @@ const Text = styled.h3`
 `
 
 const PcBr = styled.br`
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     display: none;
   }
 `
