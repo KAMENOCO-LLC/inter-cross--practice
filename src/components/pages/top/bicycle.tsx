@@ -2,30 +2,22 @@ import { FC } from 'react'
 import styled from 'styled-components'
 import { SectionTitle } from '@/components/atoms/senction-title'
 import { ContentListItem } from '@/components/atoms/content-list-item'
+import { Article } from '@/const/article'
 
 const Bicycle: FC = () => {
   return (
     <Wrap>
       <SectionTitle title={'Bicycle'} />
       <List>
-        <ContentListItem
-          imgSrc={'/images/bicycle1.jpg'}
-          imgAlt={'太陽を背にした自転車'}
-          title={'タイトルタイトル'}
-          text={'テキストテキストテキスト'}
-        />
-        <ContentListItem
-          imgSrc={'/images/bicycle2.jpg'}
-          imgAlt={'壁に立てかけられた自転車'}
-          title={'タイトルタイトル'}
-          text={'テキストテキストテキスト'}
-        />
-        <ContentListItem
-          imgSrc={'/images/bicycle3.jpg'}
-          imgAlt={'部屋に飾られた自転車'}
-          title={'タイトルタイトル'}
-          text={'テキストテキストテキスト'}
-        />
+        {Article.map((data, index) => (
+          <ContentListItem
+            imgSrc={data.imgSrc}
+            imgAlt={data.imgAlt}
+            title={data.title}
+            text={data.text}
+            key={index}
+          />
+        ))}
       </List>
     </Wrap>
   )
